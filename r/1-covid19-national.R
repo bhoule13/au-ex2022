@@ -805,20 +805,12 @@ LTci2e <- function(Dx,mx,B,Dx2,mx2,B2,sex) {
 
 
 ### DATA
-#ANU
-#setwd("C:/Users/u1019088/OneDrive - Australian National University/Articles/Australia Covid19/Re-do2022/Data")
-#home
-# setwd("C:/Users/u1019088/Desktop/Papers/Australia Covid19/Re-do22/Data")
 
 P<-read.table("../data/PopO.csv",header=TRUE,fill=TRUE,sep=",")
 PQ<-read.table("../data/PopQ.csv",header=TRUE,fill=TRUE,sep=",")
 D<-read.table("../data/DeathsO.csv",header=TRUE,fill=TRUE,sep=",")
 COD2<-read.table("../data/CausesNational3.csv",header=TRUE,fill=TRUE,sep=",", skip = 1)
 DS<-read.table("../data/DeathsStates2.csv",header=TRUE,fill=TRUE,skip=2,sep=",")
-#ANU
-#setwd("C:/Users/u1019088/OneDrive - Australian National University/Articles/Australia Covid19/Re-do2022/Results")
-#home
-# setwd("C:/Users/u1019088/Desktop/Papers/Australia Covid19/Re-do22/Results")
 
 # now i select the data by year and type (deaths D, Population P and rates r)
 # this first just to make the file smaller (too many repetitions in columns)
