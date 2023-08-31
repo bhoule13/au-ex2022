@@ -191,7 +191,7 @@ df.alt <- filter(e1719, country %in% c("GBRCENW", "FRATNP")) %>%
         is.na(ex_diff_2022) ~ ex_diff_2020 + ex_diff_2021)) %>%
     mutate(exm = case_when(!is.na(ex_diff_2022) ~ 0, is.na(ex_diff_2022) ~ 1)) %>%
     arrange(male, exm, ex_all) %>%
-    mutate(cntry_cnt = rep(seq(1, 14, 1), times = 2)) 
+    mutate(cntry_cnt = c(rep(seq(1, 14, 1), times =1), c(1,2,3,4,5,6,7,9,8,11,12,10,13,14))) 
     # %>% mutate(cntry_cnt = case_when(exm == 0 ~ cntry_cnt, exm == 1 ~ 20 - cntry_cnt))
 
 # Plot constants
