@@ -543,7 +543,7 @@ ggplot(df.3, aes(x = year, y = change)) +
         facet_grid(.~male) + 
     geom_hline(yintercept = 0) +
     scale_y_continuous(name = "Change in life expectancy (years)") + 
-    scale_fill_manual(values = c('#660099', '#005784', '#FFFF66', '#B70D0D', '#006600')) + 
+    scale_fill_manual(values = c('#660099', 'cadetblue2', '#FFFF66', '#B70D0D', '#006600')) + 
     theme(legend.position = "bottom", legend.title = element_blank())
 
     ggsave("../output/fig4-2022-03.pdf", width = 30, height = 10, units = "cm")
